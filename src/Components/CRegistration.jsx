@@ -27,12 +27,20 @@ class Register extends Component {
     }
 
     ClickToRegister = () => {
+        let checkEmail = this.props.users.find(user => user.email === this.state.email)
+        if (checkEmail) {
+            alert("This email is exist ")
+            return
+        }
         if (this.state.pass === this.state.confirm_pass) {
             let obj = { email: this.state.email, pass: this.state.pass, notes: this.state.notes }
             this.props.sendUserToManage(obj)
             this.props.history.push({
                 pathname: '/'
             })
+        }
+        else {
+            alert("The password is not same, try again.");
         }
     }
 

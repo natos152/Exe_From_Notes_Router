@@ -52,7 +52,7 @@ class ManagePages extends Component {
     return (
       <Switch>
         <Route exact path="/" render={() => <Login CheckLogin={this.CheckLogin} />} />
-        <Route path="/register" render={() => <Register sendUserToManage={this.getUserFromReg} />} />
+        <Route path="/register" render={() => <Register sendUserToManage={this.getUserFromReg} users={this.state.users} />} />
         <Route path="/main" render={() => <Main user={this.state.whoIsLogged} sendNoteFromMain={this.getNoteFromMain} />} />
         <Route path="/notes" render={() => <NotesList removeNote={this.removeNote}  whoIsLogged={this.state.whoIsLogged} user={this.state.user}/>} />
       </Switch>
