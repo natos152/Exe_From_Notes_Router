@@ -31,6 +31,7 @@ class Main extends Component {
   render() {
     return (
       <center>
+        <h2>dsadada</h2>
         <h1>Welcome to Main Page</h1>
         <div style={{ border: '2px solid black', width: 400, margin: 50, padding: 20 }}>
           <Form style={{ textAlign: 'center', width: 300 }}>

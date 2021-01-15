@@ -48,6 +48,7 @@ class Register extends Component {
         return (
             <center>
                 <div >
+                    <h1>testttttttt</h1>
                     <h1>Welcome to Registeration Page</h1>
                     <Form style={{ textAlign: 'center', width: 300 }}>
                         <Form.Group controlId="formBasicEmail">
